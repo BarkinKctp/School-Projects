@@ -1,0 +1,28 @@
+/* Make the whole page fill the screen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main layout */
+.app {
+  min-height: 100vh;
+  /* key line */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page content grows */
+.content {
+  flex: 1;
+  /* pushes footer down */
+  padding: 2rem;
+}
+
+/* Footer stays at bottom */
+.footer {
+  background: #111;
+  color: white;
+  padding: 3rem 1rem;
+}

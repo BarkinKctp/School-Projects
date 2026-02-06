@@ -1,0 +1,62 @@
+/* CreateUserForm Styles */
+.create-user-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+    box-shadow: 4px 4px 0 #1a1a1a;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.create-user-form:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+.create-user-form input {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: 2px solid #1a1a1a;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-user-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.create-user-form button {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.create-user-form button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+.create-user-form button[type="submit"]:hover {
+    background-color: #219a52;
+    transform: scale(1.02);
+}
+
+.create-user-form button[type="button"] {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.create-user-form button[type="button"]:hover {
+    background-color: #7f8c8d;
+}
+
+.validation-error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background: #fde8e8;
+    border-radius: 4px;
+}

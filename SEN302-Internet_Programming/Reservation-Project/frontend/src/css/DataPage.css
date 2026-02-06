@@ -1,0 +1,60 @@
+/* DataPage Styles */
+.data-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.data-page h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.get-user-list {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #1a1a1a;
+    box-shadow: 3px 3px 0 #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.get-user-list:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #1a1a1a;
+}
+
+/* User Cards Container */
+.user-cards-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Messages */
+.error-message {
+    color: #e74c3c;
+    background: #fde8e8;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.empty-message {
+    color: #7f8c8d;
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.loading-message {
+    color: #3498db;
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,0 +1,128 @@
+/* UserCard Styles */
+.user-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 2px solid #1a1a1a;
+    box-shadow: 4px 4px 0 #1a1a1a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+.user-card h3 {
+    color: #1a1a1a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.user-card p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.edit-button,
+.delete-button {
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.edit-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Edit Form */
+.edit-form,
+.delete-confirmation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    animation: slideDown 0.3s ease;
+}
+
+.edit-form input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.edit-form button,
+.delete-confirmation button {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.edit-form button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+.edit-form button[type="submit"]:hover {
+    background-color: #219a52;
+}
+
+.edit-form button[type="button"],
+.delete-confirmation button[type="button"] {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.edit-form button[type="button"]:hover,
+.delete-confirmation button[type="button"]:hover {
+    background-color: #7f8c8d;
+}
+
+.delete-confirmation button[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-confirmation button[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+
+
+/* Validation Error */
+.validation-error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
