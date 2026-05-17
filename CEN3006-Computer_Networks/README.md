@@ -1,24 +1,18 @@
-# Wireless Network Simulation Analysis
+# CEN3006 — Computer Networks
 
-This project follows the 14-step INET Framework tutorial to build and analyze a wireless network simulation using OMNeT++. The goal was to transition from a basic "perfect" connection to a realistic, high-fidelity environment involving mobile nodes, obstacles, and complex radio models.
+Wireless network simulation lab using OMNeT++ and the INET Framework.
 
-## Key Features
+## About
 
-- **Layered Stack:** Verified data flow from the application layer down to the physical WLAN interface.
-- **Protocol Impact:** Analyzed how CSMA/CA and ACKs significantly improve reliability in shared wireless media.
-- **Ad-Hoc Routing:** Implemented AODV to maintain connectivity dynamically as relay nodes move.
-- **Environmental Realism:** Modeled signal interference (SINR), concrete obstacles, and antenna gain patterns.
+This lab follows the [INET Wireless Tutorial](https://inet.omnetpp.org/docs/tutorials/wireless/doc/index.html) across 14 progressive steps — starting from an ideal two-host link and building toward a fully realistic mobile ad-hoc network with SINR interference, CSMA/CA, AODV routing, physical obstacles, and directional antennas.
 
-## Core Takeaways
+## Report
 
-- **Theory vs. Reality:** Ideal radio models are great for logic testing but hide critical real-world issues like interference and path loss.
-- **The Mobility Problem:** Static routing works fine until nodes move; dynamic protocols like AODV are essential for modern mobile ad-hoc networks (MANETs).
-- **Physical Constraints:** Physical environments (walls, distance, noise) are often the biggest bottleneck for network performance.
+The full step-by-step walkthrough, tables, and results summary can be found in [`REPORT.md`](REPORT.md).
 
-## Tools Used
+## Tools
 
 | Tool | Name |
 |------|------|
-| Simulator | OMNeT++ |
-| Framework | INET |
-| Analysis | AI-assisted log and scalar data interpretation |
+| Simulator | [OMNeT++](https://omnetpp.org/) |
+| Framework | [INET](https://inet.omnetpp.org/) |
